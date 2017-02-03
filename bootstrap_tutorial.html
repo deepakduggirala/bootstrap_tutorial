@@ -576,6 +576,334 @@
                 <button type="button" class="btn btn-primary">Samsung</button>
                 <button type="button" class="btn btn-primary">Sony</button>
             </div>
+
+            <h2>Justified Button Groups</h2>
+            <p>To span the entire width of the screen, use the .btn-group-justified class:</p>
+            <div class="btn-group btn-group-justified">
+                <a href="#" class="btn btn-primary">Apple</a>
+                <a href="#" class="btn btn-primary">Samsung</a>
+                <a href="#" class="btn btn-primary">Sony</a>
+            </div>
+
+            <div class="alert alert-info">
+                <strong>Note:</strong> For <code>&lt;button></code> elements, you must wrap each button in a <code>.btn-group</code> class:
+            </div>
+
+            <h2>Justified Button Groups</h2>
+            <div class="btn-group btn-group-justified">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-primary">Apple</button>
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-primary">Samsung</button>
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-primary">Sony</button>
+                </div>
+            </div>
+
+            <h2>Nesting Button Groups</h2>
+            <p>Nest button groups to create drop down menus:</p>
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary">Apple</button>
+                <button type="button" class="btn btn-primary">Samsung</button>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                        Sony <span class="caret"></span></button>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Tablet</a></li>
+                        <li><a href="#">Smartphone</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <h2>Split Buttons</h2>
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary">Sony</button>
+                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">Tablet</a></li>
+                    <li><a href="#">Smartphone</a></li>
+                </ul>
+            </div>
+
+            <h2>Glyphicon</h2>
+            <p><strong>Syntax:</strong></p>
+            <div class="alert alert-info">
+                <code>&lt;span class &quot;glyphicon glyphicon-<i>name</i>&gt;&lt;/span&gt;</code>
+            </div>
+            <p>The name part in the syntax above must be replaced with the proper name of the glyphicon.</p>
+
+            <h2>Glyphicon Examples</h2>
+            <p>Envelope icon: <span class="glyphicon glyphicon-envelope"></span></p>    
+            <p>Envelope icon as a link:
+                <a href="#"><span class="glyphicon glyphicon-envelope"></span></a>
+            </p>
+            <p>Search icon: <span class="glyphicon glyphicon-search"></span></p>
+            <p>Search icon on a button:
+                <button type="button" class="btn btn-default">
+                    <span class="glyphicon glyphicon-search"></span> Search
+                </button>
+            </p>
+            <p>Search icon on a styled button:
+                <button type="button" class="btn btn-info">
+                    <span class="glyphicon glyphicon-search"></span> Search
+                </button>
+            </p>
+            <p>Print icon: <span class="glyphicon glyphicon-print"></span></p>      
+            <p>Print icon on a styled link button:
+                <a href="#" class="btn btn-success btn-lg">
+                    <span class="glyphicon glyphicon-print"></span> Print 
+                </a>
+            </p> 
+
+            <h2>Badges</h2>
+            <p>Badges are numerical indicators of how many items are associated with a link:</p>
+            <a href="#">News <span class="badge">5</span></a><br>
+            <a href="#">Comments <span class="badge">10</span></a><br>
+            <a href="#">Updates <span class="badge">2</span></a>
+
+            <h2>Badges on Buttons</h2>
+            <button type="button" class="btn btn-primary">Primary <span class="badge">7</span></button>
+            <button type="button" class="btn btn-success">Success <span class="badge">3</span></button>    
+            <button type="button" class="btn btn-danger">Danger <span class="badge">5</span></button>
+
+            <h2>Labels</h2>
+            <p>Labels are used to provide additional information about something:</p>
+            <h1>Example <span class="label label-default">New</span></h1>
+            <h2>Example <span class="label label-primary">New</span></h2>
+            <h3>Example <span class="label label-success">New</span></h3>
+            <h4>Example <span class="label label-info">New</span></h4>
+            <h5>Example <span class="label label-warning">New</span></h5>
+            <h6>Example <span class="label label-danger">New</span></h6>
+
+            <h2>Basic Progress Bar</h2>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                    <span class="sr-only">70% Complete</span>
+                </div>
+            </div>
+
+            <div class="alert alert-info">
+                <strong>Note:</strong> Progress bars are not supported in Internet Explorer 9 and earlier (because they use CSS3 transitions and animations to achieve some of their effects).
+                <br>
+                <br>
+                <strong>Note:</strong> To help improve accessibility for people using screen readers, you should include the aria-* attributes.
+            </div>
+
+            <h2>Colored Progress Bars</h2>
+            <p>The contextual classes colors the progress bars:</p> 
+            <div class="progress">
+                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+                    40% Complete (success)
+                </div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+                    50% Complete (info)
+                </div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                    60% Complete (warning)
+                </div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                    70% Complete (danger)
+                </div>
+            </div>
+
+            <h2>Striped Progress Bars</h2>
+            <p>The .progress-bar-striped class adds stripes to the progress bars:</p> 
+            <div class="progress">
+                <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+                    40% Complete (success)
+                </div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+                    50% Complete (info)
+                </div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                    60% Complete (warning)
+                </div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                    70% Complete (danger)
+                </div>
+            </div>
+
+            <h2>Animated Progress Bar</h2>
+            <p>The .active class animates the progress bar:</p> 
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+                    40%
+                </div>
+            </div>
+
+            <h2>Stacked Progress Bars</h2>
+            <p>Create a stacked progress bar by placing multiple bars into the same div with class .progress:</p> 
+            <div class="progress">
+                <div class="progress-bar progress-bar-success" role="progressbar" style="width:40%">
+                    Free Space
+                </div>
+                <div class="progress-bar progress-bar-warning" role="progressbar" style="width:10%">
+                    Warning
+                </div>
+                <div class="progress-bar progress-bar-danger" role="progressbar" style="width:20%">
+                    Danger
+                </div>
+            </div>
+
+            <h2>Pagination</h2>
+            <p>The .pagination class provides pagination links:</p>                  
+            <ul class="pagination">
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+            </ul>
+
+            <h2>Pagination - Active State</h2>
+            <p>Add class .active to let the user know which page he/she is on:</p>
+            <ul class="pagination">
+                <li><a href="#">1</a></li>
+                <li class="active"><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+            </ul>
+
+            <h2>Pagination - Disabled State</h2>
+            <p>Add class .disabled if a page for some reason is disabled:</p>
+            <ul class="pagination">
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li class="disabled"><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+            </ul>
+
+            <h2>Pagination - Sizing</h2>
+            <p>Add class .pagination-lg for larger blocks or .pagination-sm for smaller blocks.</p>
+
+            <p>Large:</p>
+            <ul class="pagination pagination-lg">
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+            </ul>
+
+            <p>Default:</p>
+            <ul class="pagination pagination">
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+            </ul>
+
+            <p>Small:</p>
+            <ul class="pagination pagination-sm">
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+            </ul>
+
+
+            <h2>Breadcrumbs</h2>
+            <p>The .breadcrumb class indicates the current page's location within a navigational hierarchy:</p>                  
+            <ul class="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Private</a></li>
+                <li><a href="#">Pictures</a></li>
+                <li class="active">Vacation</li>        
+            </ul>
+
+            <h2>Pager</h2>
+            <p>The .pager class provides previous and next buttons (links):</p>                  
+            <ul class="pager">
+                <li><a href="#">Previous</a></li>
+                <li><a href="#">Next</a></li>
+            </ul>
+
+            <h2>Pager</h2>
+            <p>The .previous and .next classes align each link to the sides of the page:</p>                  
+            <ul class="pager">
+                <li class="previous"><a href="#">Previous</a></li>
+                <li class="next"><a href="#">Next</a></li>
+            </ul>
+
+            <h2>Basic List Group</h2>
+            <ul class="list-group">
+                <li class="list-group-item">First item</li>
+                <li class="list-group-item">Second item</li>
+                <li class="list-group-item">Third item</li>
+            </ul>
+
+            <h2>List Group With Badges</h2>
+            <p>The badges will automatically be positioned on the right:</p>
+            <ul class="list-group">
+                <li class="list-group-item">New <span class="badge">12</span></li>
+                <li class="list-group-item">Deleted <span class="badge">5</span></li>
+                <li class="list-group-item">Warnings <span class="badge">3</span></li>
+            </ul>
+
+            <h2>List Group With Linked Items</h2>
+            <div class="list-group">
+                <a href="#" class="list-group-item">First item</a>
+                <a href="#" class="list-group-item">Second item</a>
+                <a href="#" class="list-group-item">Third item</a>
+            </div>
+
+            <h2>Active Item in a List Group</h2>
+            <p>Use the <code>.active</code> class to highlight the current item:</p>
+            <p>To disable an item, add the <code>.disabled</code> class:</p>
+            <div class="list-group">
+                <a href="#" class="list-group-item active">First item</a>
+                <a href="#" class="list-group-item disbled">Second item</a>
+                <a href="#" class="list-group-item">Third item</a>
+            </div>
+
+            <h2>List Group With Contextual Classes</h2>
+            <ul class="list-group">
+                <li class="list-group-item list-group-item-success">First item</li>
+                <li class="list-group-item list-group-item-info">Second item</li>
+                <li class="list-group-item list-group-item-warning">Third item</li>
+                <li class="list-group-item list-group-item-danger">Fourth item</li>
+            </ul>
+
+            <h2>Linked Items With Contextual Classes</h2>
+            <p>Move the mouse over the linked items to see the hover effect:</p>
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-success">First item</a>
+                <a href="#" class="list-group-item list-group-item-info">Second item</a>
+                <a href="#" class="list-group-item list-group-item-warning">Third item</a>
+                <a href="#" class="list-group-item list-group-item-danger">Fourth item</a>
+            </div>
+
+            <h2>List Group With Custom Content</h2>
+            <div class="list-group">
+                <a href="#" class="list-group-item active">
+                    <h4 class="list-group-item-heading">First List Group Item Heading</h4>
+                    <p class="list-group-item-text">List Group Item Text</p>
+                </a>
+                <a href="#" class="list-group-item">
+                    <h4 class="">Heading without any bootstrap classes inside an anchor tag with list-group-item</h4>
+                    <p class="">paragraph same here</p>
+                </a>
+            </div>
         </div>
     </body>
 </html>
