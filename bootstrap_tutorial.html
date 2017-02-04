@@ -11,6 +11,46 @@
             <h1>Bootstrap Tutorial</h1>      
             <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first projects on the web.</p>
         </div>
+        <!--<nav class="navbar navbar-default navbar-fixed-top">-->
+        <nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                        
+                    </button>
+                    <a class="navbar-brand" href="#">Navigation Bar</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">Page 1</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    </ul>
+                    <button class="btn btn-danger navbar-btn">Button</button>
+                    <form class="navbar-form navbar-left">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                        <button type="submit" class="btn btn-default">Submit</button>
+                    </form>
+                    <form class="navbar-form navbar-left">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                            <div class="input-group-btn">
+                                <button class="btn btn-default" type="submit">
+                                    <i class="glyphicon glyphicon-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </nav>
         <div class="container">
             <h1>h1 Bootstrap heading (36px)</h1>
             <h2>h2 Bootstrap heading (30px)</h2>
@@ -1063,6 +1103,560 @@
                     <li role="presentation"><a role="menuitem" tabindex="-1" href="#">About Us</a></li>
                 </ul>
             </div>
+
+            <h2>Simple Collapsible</h2>
+            <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Simple collapsible</button>
+            <div id="demo" class="collapse">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+            <div class="alert alert-info">
+                <p><strong>Note:</strong> For <a> elements, you can use the href attribute instead of the <code>data-target</code> attribute:</p>
+                    <br>
+                    <br>
+                <p>By default, the collapsible content is hidden. However, you can add the <code>.in</code> class to show the content by default:</p>
+            </div>
+
+
+            <h2>Accordion Example</h2>
+            <p><strong>Note:</strong> The <strong>data-parent</strong> attribute makes sure that all collapsible elements under the specified parent will be closed when one of the collapsible item is shown.</p>
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Collapsible Group 1</a>
+                        </h4>
+                    </div>
+                    <div id="collapse1" class="panel-collapse collapse in">
+                        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Collapsible Group 2</a>
+                        </h4>
+                    </div>
+                    <div id="collapse2" class="panel-collapse collapse">
+                        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Collapsible Group 3</a>
+                        </h4>
+                    </div>
+                    <div id="collapse3" class="panel-collapse collapse">
+                        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                    </div>
+                </div>
+            </div> 
+
+            <h3>Inline List</h3>
+            <ul class="list-inline">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu 1</a></li>
+                <li><a href="#">Menu 2</a></li>
+                <li><a href="#">Menu 3</a></li>
+            </ul>
+
+            <h3>Tabs With Dropdown Menu</h3>
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#">Home</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Menu 1 <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Submenu 1-1</a></li>
+                        <li><a href="#">Submenu 1-2</a></li>
+                        <li><a href="#">Submenu 1-3</a></li>                        
+                    </ul>
+                </li>
+                <li><a href="#">Menu 2</a></li>
+                <li><a href="#">Menu 3</a></li>
+            </ul>
+
+            <h3>Pills</h3>
+            <ul class="nav nav-pills">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Menu 1</a></li>
+                <li><a href="#">Menu 2</a></li>
+                <li><a href="#">Menu 3</a></li>
+            </ul>
+
+            <h3>Vertical Pills</h3>
+            <p>Use the .nav-stacked class to vertically stack pills:</p>
+            <ul class="nav nav-pills nav-stacked">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Menu 1</a></li>
+                <li><a href="#">Menu 2</a></li>
+                <li><a href="#">Menu 3</a></li>
+            </ul>
+
+            <h3>Vertical Pills</h3>
+            <div class="row">
+                <div class="col-md-3">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="col-md-3"> 
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div class="col-md-3"> 
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                </div>
+                <div class="col-md-3">
+                    <ul class="nav nav-pills nav-stacked">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">Menu 1</a></li>
+                        <li><a href="#">Menu 2</a></li>
+                        <li><a href="#">Menu 3</a></li>
+                    </ul>
+                </div>
+                <div class="clearfix visible-lg"></div>
+            </div>
+
+            <h3>Pills With Dropdown Menu</h3>
+            <ul class="nav nav-pills nav-stacked">
+                <li class="active"><a href="#">Home</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Menu 1 <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Submenu 1-1</a></li>
+                        <li><a href="#">Submenu 1-2</a></li>
+                        <li><a href="#">Submenu 1-3</a></li>                        
+                    </ul>
+                </li>
+                <li><a href="#">Menu 2</a></li>
+                <li><a href="#">Menu 3</a></li>
+            </ul>
+
+            <h3>Centered Tabs</h3>
+            <p>To center/justify the tabs and pills, use the .nav-justified class. Note that on screens that are smaller than 768px, the list items are stacked (content will remain centered).</p>
+            <ul class="nav nav-tabs nav-justified">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Menu 1</a></li>
+                <li><a href="#">Menu 2</a></li>
+                <li><a href="#">Menu 3</a></li>
+            </ul>
+            <br>
+            <h3>Centered Pills</h3>
+            <ul class="nav nav-pills nav-justified">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Menu 1</a></li>
+                <li><a href="#">Menu 2</a></li>
+                <li><a href="#">Menu 3</a></li>
+            </ul>
+
+            <h2>Dynamic Tabs</h2>
+            <p>To make the tabs toggleable, add the data-toggle="tab" attribute to each link. Then add a .tab-pane class with a unique ID for every tab and wrap them inside a div element with class .tab-content.</p>
+
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+                <li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
+                <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
+                <li><a data-toggle="tab" href="#menu3">Menu 3</a></li>
+            </ul>
+
+            <div class="tab-content">
+                <div id="home" class="tab-pane fade in active">
+                    <h3>HOME</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div id="menu1" class="tab-pane fade">
+                    <h3>Menu 1</h3>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div id="menu2" class="tab-pane fade">
+                    <h3>Menu 2</h3>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                </div>
+                <div id="menu3" class="tab-pane fade">
+                    <h3>Menu 3</h3>
+                    <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                </div>
+            </div>
+
+            <h2>Dynamic Pills</h2>
+            <p>To make the tabs toggleable, add the data-toggle="pill" attribute to each link. Then add a .tab-pane class with a unique ID for every tab and wrap them inside a div element with class .tab-content.</p>
+            <ul class="nav nav-pills">
+                <li class="active"><a data-toggle="pill" href="#home">Home</a></li>
+                <li><a data-toggle="pill" href="#menu1">Menu 1</a></li>
+                <li><a data-toggle="pill" href="#menu2">Menu 2</a></li>
+                <li><a data-toggle="pill" href="#menu3">Menu 3</a></li>
+            </ul>
+
+            <div class="tab-content">
+                <div id="phome" class="tab-pane fade in active">
+                    <h3>HOME</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div id="pmenu1" class="tab-pane fade">
+                    <h3>Menu 1</h3>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div id="pmenu2" class="tab-pane fade">
+                    <h3>Menu 2</h3>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                </div>
+                <div id="pmenu3" class="tab-pane fade">
+                    <h3>Menu 3</h3>
+                    <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                </div>
+            </div>
+
+            <h2>Forms</h2>
+            <p>Bootstrap provides three types of form layouts:</p>
+            <ul>
+                <li>Vertical form (this is default)</li>
+                <li>Horizontal form</li>
+                <li>Inline form</li>
+            </ul>
+            <p>Standard rules for all three form layouts:
+
+                Wrap labels and form controls in <code>&lt;div class="form-group"&gt;</code> (needed for optimum spacing)
+                Add class <code>.form-control</code> to all textual <code>&lt;input&gt;</code>, <code>&lt;textarea&gt;</code>, and <code>&lt;select&gt;</code> elements</p>
+            <h2>Vertical (basic) form</h2>
+            <form>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                    <label for="pwd">Password:</label>
+                    <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox"> Remember me</label>
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+
+            <h2>Inline form</h2>
+            <p>Make the viewport larger than 768px wide to see that all of the form elements are inline, left aligned, and the labels are alongside.</p>
+            <form class="form-inline">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                    <label for="pwd">Password:</label>
+                    <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox"> Remember me</label>
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+
+            <h2>Horizontal form</h2>
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="email">Email:</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="email" placeholder="Enter email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="pwd">Password:</label>
+                    <div class="col-sm-10">          
+                        <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+                    </div>
+                </div>
+                <div class="form-group">        
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <div class="checkbox">
+                            <label><input type="checkbox"> Remember me</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">        
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button type="submit" class="btn btn-default">Submit</button>
+                    </div>
+                </div>
+            </form>
+
+            <h2>Supported Form Controls</h2>
+            <p>Bootstrap supports the following form controls:</p>
+            <ul>
+                <li>input</li>
+                <li>textarea</li>
+                <li>checkbox</li>
+                <li>radio</li>
+                <li>select</li>
+            </ul>
+
+            <h2>Bootstrap Input</h2>
+            <p>Bootstrap supports all the HTML5 input types: 
+                text, password, datetime, datetime-local, date, month, time, week, number, 
+                email, url, search, tel, and color. </p>
+
+            <h2>Form control: input</h2>
+            <p>The form below contains two input elements; one of type text and one of type password:</p>
+            <form>
+                <div class="form-group">
+                    <label for="usr">Name:</label>
+                    <input type="text" class="form-control" id="usr">
+                </div>
+                <div class="form-group">
+                    <label for="pwd">Password:</label>
+                    <input type="password" class="form-control" id="pwd">
+                </div>
+            </form>
+
+            <h2>Form control: textarea</h2>
+            <p>The form below contains a textarea for comments:</p>
+            <form>
+                <div class="form-group">
+                    <label for="comment">Comment:</label>
+                    <textarea class="form-control" rows="5" id="comment"></textarea>
+                </div>
+            </form> 
+
+            <h2>Form control: checkbox</h2>
+            <p>The form below contains three checkboxes. The last option is disabled:</p>
+            <form>
+                <div class="checkbox">
+                    <label><input type="checkbox" value="">Option 1</label>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" value="">Option 2</label>
+                </div>
+                <div class="checkbox disabled">
+                    <label><input type="checkbox" value="" disabled>Option 3</label>
+                </div>
+            </form>
+
+            <h2>Form control: inline checkbox</h2>
+            <p>The form below contains three inline checkboxes:</p>
+            <form>
+                <label class="checkbox-inline">
+                    <input type="checkbox" value="">Option 1
+                </label>
+                <label class="checkbox-inline">
+                    <input type="checkbox" value="">Option 2
+                </label>
+                <label class="checkbox-inline">
+                    <input type="checkbox" value="">Option 3
+                </label>
+            </form>
+
+            <h2>Form control: radio buttons</h2>
+            <p>The form below contains three radio buttons. The last option is disabled:</p>
+            <form>
+                <div class="radio">
+                    <label><input type="radio" name="optradio">Option 1</label>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" name="optradio">Option 2</label>
+                </div>
+                <div class="radio disabled">
+                    <label><input type="radio" name="optradio" disabled>Option 3</label>
+                </div>
+            </form>
+
+            <h2>Form control: inline radio buttons</h2>
+            <p>The form below contains three inline radio buttons:</p>
+            <form>
+                <label class="radio-inline">
+                    <input type="radio" name="optradio">Option 1
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="optradio">Option 2
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="optradio">Option 3
+                </label>
+            </form>
+
+            <h2>Form control: select</h2>
+            <p>The form below contains two dropdown menus (select lists):</p>
+            <form>
+                <div class="form-group">
+                    <label for="sel1">Select list (select one):</label>
+                    <select class="form-control" id="sel1">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                    </select>
+                    <br>
+                    <label for="sel2">Mutiple select list (hold shift to select more than one):</label>
+                    <select multiple class="form-control" id="sel2">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+            </form>
+
+            <h2>Horizontal form with static control</h2>
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="email">Email:</label>
+                    <div class="col-sm-10">
+                        <p class="form-control-static">someone@example.com</p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="pwd">Password:</label>
+                    <div class="col-sm-10">          
+                        <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+                    </div>
+                </div>
+                <div class="form-group">        
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button type="submit" class="btn btn-default">Submit</button>
+                    </div>
+                </div>
+            </form>
+
+            <h3>Input Groups</h3>
+            <p>The .input-group class is a container to enhance an input by adding an icon, text or a button in front or behind it as a "help text".</p>
+            <p>The .input-group-addon class attaches an icon or help text next to the input field.</p>
+
+            <form>
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                    <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                    <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+                </div>
+                <br>
+                <div class="input-group">
+                    <span class="input-group-addon">Text</span>
+                    <input id="msg" type="text" class="form-control" name="msg" placeholder="Additional Info">
+                </div>
+            </form>
+            <br>
+
+            <p>It can also be used on the right side of the input:</p>
+            <form>
+                <div class="input-group">
+                    <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>   
+                </div>
+                <div class="input-group">
+                    <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                </div>
+            </form>
+
+            <h1>Input Group Button</h1>
+            <p>The .input-group class is a container to enhance an input by adding an icon, text or a button in front or behind it as a "help text".</p>
+            <p>The .input-group-btn class attaches a button next to an input field. This is often used as a search bar:</p>
+            <form>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                    <div class="input-group-btn">
+                        <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                    </div>
+                </div>
+            </form>
+
+            <h2>Horizontal form: control states</h2>
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">Focused</label>
+                    <div class="col-sm-10">
+                        <input class="form-control" id="focusedInput" type="text" value="Click to focus...">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputPassword" class="col-sm-2 control-label">Disabled</label>
+                    <div class="col-sm-10">
+                        <input class="form-control" id="disabledInput" type="text" placeholder="Disabled input here..." disabled>
+                    </div>
+                </div>
+                <fieldset disabled>
+                    <div class="form-group">
+                        <label for="disabledTextInput" class="col-sm-2 control-label">Disabled input and select list (Fieldset disabled)</label>
+                        <div class="col-sm-10">
+                            <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="disabledSelect" class="col-sm-2 control-label"></label>
+                        <div class="col-sm-10">
+                            <select id="disabledSelect" class="form-control">
+                                <option>Disabled select</option>
+                            </select>
+                        </div>
+                    </div>
+                </fieldset>
+                <div class="form-group has-success has-feedback">
+                    <label class="col-sm-2 control-label" for="inputSuccess">Input with success and glyphicon</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputSuccess">
+                        <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+                    </div>
+                </div>
+                <div class="form-group has-warning has-feedback">
+                    <label class="col-sm-2 control-label" for="inputWarning">Input with warning and glyphicon</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputWarning">
+                        <span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
+                    </div>
+                </div>
+                <div class="form-group has-error has-feedback">
+                    <label class="col-sm-2 control-label" for="inputError">Input with error and glyphicon</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputError">
+                        <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+                    </div>
+                </div>
+            </form>
+
+            <h2>Inline form: control states</h2>
+            <form class="form-inline">
+                <div class="form-group">
+                    <label for="focusedInput">Focused</label>
+                    <input class="form-control" id="focusedInput" type="text">
+                </div>
+                <div class="form-group">
+                    <label for="inputPassword">Disabled</label>
+                    <input class="form-control" id="disabledInput" type="text" disabled>
+                </div>
+                <div class="form-group has-success has-feedback">
+                    <label for="inputSuccess2">Input with success</label>
+                    <input type="text" class="form-control" id="inputSuccess2">
+                    <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+                </div>
+                <div class="form-group has-warning has-feedback">
+                    <label for="inputWarning2">Input with warning</label>
+                    <input type="text" class="form-control" id="inputWarning2">
+                    <span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
+                </div>
+                <div class="form-group has-error has-feedback">
+                    <label for="inputError2">Input with error</label>
+                    <input type="text" class="form-control" id="inputError2">
+                    <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+                </div>
+            </form>
         </div>
+        <nav class="navbar navbar-inverse navbar-fixed-bottom">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">WebSiteName</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">Page 1</a></li>
+                    <li><a href="#">Page 2</a></li>
+                    <li><a href="#">Page 3</a></li>
+                </ul>
+            </div>
+        </nav>
     </body>
 </html>
