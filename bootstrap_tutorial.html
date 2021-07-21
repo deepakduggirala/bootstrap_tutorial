@@ -1644,6 +1644,44 @@
                     <span class="glyphicon glyphicon-remove form-control-feedback"></span>
                 </div>
             </form>
+            
+                <h3>Tooltip Example</h3>
+                <a href="#" data-toggle="tooltip" title="Hooray!">Hover over me</a>
+                
+                
+                <p>The data-placement attribute specifies the tooltip position.</p>
+                <ul class="list-inline">
+                    <li><a href="#" data-toggle="tooltip" data-placement="top" title="Hooray!">Top</a></li>
+                    <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Hooray!">Bottom</a></li>
+                    <li><a href="#" data-toggle="tooltip" data-placement="left" title="Hooray!">Left</a></li>
+                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Hooray!">Right</a></li>
+                </ul>
+                <div class="alert alert-info">
+                <p><strong>Note:</strong> You can also use the data-placement attribute with a value of <code>auto</code>,
+                which will let the browser decide the position of the tooltip. For example,
+                if the value is <code>auto left</code>, the tooltip will display on the left side when possible,
+                otherwise on the right.</p>
+                </div>
+                
+                <p>The data-placement attribute specifies the tooltip position with auto.</p>
+                <ul class="list-inline">
+                    <li><a href="#" data-toggle="tooltip" data-placement="auto" title="Hooray!">Top</a></li>
+                    <li><a href="#" data-toggle="tooltip" data-placement="auto" title="Hooray!">Bottom</a></li>
+                    <li><a href="#" data-toggle="tooltip" data-placement="auto" title="Hooray!">Left</a></li>
+                    <li><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="auto" title="Hooray!">Right</button></li>
+                    <li>
+                        <button class="site-action-toggle btn-raised btn btn-floating closeButtonPending" data-toggle="tooltip" data-placement="left" title="UnSelect All" type="button" onclick="unSelectAll()">
+                            <i aria-hidden="true" class="front-icon animation-scale-up"></i>
+                            <i aria-hidden="true" class="back-icon wb-close animation-scale-up"></i>
+                        </button>
+                    </li>
+                </ul>
+            <div>
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
         </div>
         <nav class="navbar navbar-inverse navbar-fixed-bottom">
             <div class="container-fluid">
@@ -1658,5 +1696,11 @@
                 </ul>
             </div>
         </nav>
+        
+        <script>
+            $(document).ready(function(){
+                $('[data-toggle="tooltip"]').tooltip();   
+            });
+        </script>
     </body>
 </html>
